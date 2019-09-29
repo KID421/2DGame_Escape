@@ -449,6 +449,10 @@ GameObject:
   - component: {fileID: 42445229}
   - component: {fileID: 42445228}
   - component: {fileID: 42445227}
+  - component: {fileID: 42445234}
+  - component: {fileID: 42445230}
+  - component: {fileID: 42445241}
+  - component: {fileID: 42445242}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -523,7 +527,7 @@ MonoBehaviour:
   itemId: 0
   blockName: "\u958B\u982D\u5C0D\u8A71"
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 42445242}
   commandList:
   - {fileID: 42445041}
 --- !u!114 &42445044
@@ -539,10 +543,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -43.49823, y: 172.69818}
+  scrollPos: {x: -73.877945, y: 190.41971}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 509
+  blockViewHeight: 524
   zoom: 0.7900002
   scrollViewRect:
     serializedVersion: 2
@@ -551,9 +555,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 42445240}
-  selectedCommands:
-  - {fileID: 42445233}
+  - {fileID: 42445043}
+  selectedCommands: []
   variables:
   - {fileID: 42445101}
   - {fileID: 42445141}
@@ -6472,7 +6475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 197
   indentLevel: 2
-  storyText: "\u5594\u5594\u5594...\u770B\u4F86\u662F\u731C\u5C0D\u4E86!!!"
+  storyText: "{punch=10,0.5}\u5594\u5594\u5594...\u770B\u4F86\u662F\u731C\u5C0D\u4E86!!!\n{wc}\n\u5E0C\u671B\u6253\u958B\u9580\u662F\u6211\u719F\u6089\u7684\u5730\u65B9..."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6516,6 +6519,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 195
   indentLevel: 1
+--- !u!114 &42445230
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42445040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 199
+  indentLevel: 2
 --- !u!114 &42445231
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6532,7 +6549,7 @@ MonoBehaviour:
   indentLevel: 2
   soundClip: {fileID: 8300000, guid: a8e812e845a200d4a99a9f1112a59e10, type: 3}
   volume: 1
-  waitUntilFinished: 0
+  waitUntilFinished: 1
 --- !u!114 &42445232
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6611,6 +6628,25 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &42445234
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42445040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 198
+  indentLevel: 2
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!114 &42445235
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6764,12 +6800,47 @@ MonoBehaviour:
   - {fileID: 42445233}
   - {fileID: 42445227}
   - {fileID: 42445231}
+  - {fileID: 42445234}
+  - {fileID: 42445241}
+  - {fileID: 42445230}
   - {fileID: 42445232}
   - {fileID: 42445228}
   - {fileID: 42445229}
   - {fileID: 42445237}
   - {fileID: 42445235}
   - {fileID: 42445236}
+--- !u!114 &42445241
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42445040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 200
+  indentLevel: 2
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &42445242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42445040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 42445043}
+  waitForFrames: 1
 --- !u!1 &120927593
 GameObject:
   m_ObjectHideFlags: 0
@@ -7116,7 +7187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &306091855
 SpriteRenderer:
   m_ObjectHideFlags: 0
